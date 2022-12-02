@@ -36,8 +36,7 @@ int most_calories(FILE *file)
     int arr[ARRAY_SIZE];
 
     // Filling the array with -1 makes it easy to find where the real calorie data ends later on
-    for (int i = 0; i < ARRAY_SIZE; i++)
-        arr[i] = -1;
+    for (int i = 0; i < ARRAY_SIZE; i++)    arr[i] = -1;
 
     int calories = 0, idx = 0;
     char line[MAX_LINE_LEN];
@@ -60,7 +59,7 @@ int most_calories(FILE *file)
     }
 
     // Fills the last array spot manually, because end of file is not a blank line
-    arr[idx] = calories;
+    arr[idx] = calories; 
 
     int most_calories = 0;
 
