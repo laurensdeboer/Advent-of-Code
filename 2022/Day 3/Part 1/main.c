@@ -18,13 +18,24 @@ int main()
     return 0;
 }
 
-int calculate_result(FILE *file)
+/*
+    Function: calculate_result
+    --------------------------
+    Calculates the final score
+
+    Parameters:
+        f --> The file to read data from
+
+    Returns:
+        score --> The answer of the puzzle
+*/
+int calculate_result(FILE *f)
 {
     int compartment_one[CHAR_AMT] = {0}, compartment_two[CHAR_AMT] = {0};
     int score = 0;
     char str[STR_LEN_MAX];
     
-    while(fgets(str, STR_LEN_MAX, file) != NULL)
+    while(fgets(str, STR_LEN_MAX, f) != NULL)
     {
         count_char_appearance(compartment_one, compartment_two, str);
         check_common_chars(compartment_one, compartment_two, &score);
@@ -35,7 +46,7 @@ int calculate_result(FILE *file)
 
 /*
     Function: count_char_appearance
-    ---------------------------
+    -------------------------------
     Finds the amount of each character that is in the input file
 
     Parameters:
