@@ -21,7 +21,7 @@ int main()
 /*
  *
  *  Function: get_player_score(FILE *file)
- *  -----------------------------------
+ *  --------------------------------------
  *  Finds the score of the player after the game of rock paper scissors ends
  * 
  *  Parameter
@@ -65,7 +65,7 @@ int get_player_score(FILE *file)
 /*
  *
  *  Function: get_move(char c)
- *  -----------------------------------
+ *  --------------------------
  *  Converts move from characters to numbers
  * 
  *  Parameter
