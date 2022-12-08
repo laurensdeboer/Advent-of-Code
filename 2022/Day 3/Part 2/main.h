@@ -3,10 +3,10 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-char get_array_index(char char_to_check);
 char *loop_file(FILE *f);
 char find_badge(char *ptr_elf_group);
 char get_array_char(int to_char);
+char get_array_index(char char_to_check);
 
 #define OFFSET_LC           97
 #define OFFSET_UC           39
